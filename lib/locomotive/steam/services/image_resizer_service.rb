@@ -43,7 +43,7 @@ module Locomotive
         elsif source.respond_to?(:url)
           source.url
         else
-          source
+          source || ''
         end.strip
       end
 
